@@ -2,6 +2,6 @@ dist: bionic
 language: python
 python: 3.8
 install:
-- pip install virtualenv
+- pip install --upgrade virtualenv
 - virtualenv env
 script: env/bin/python -S -c "import glob"
