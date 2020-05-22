@@ -1,5 +1,7 @@
 dist: bionic
 language: python
 python: 3.8
-install: pip install tox
-script: tox
+install:
+- pip install virtualenv
+- virtualenv env
+script: env/bin/python -S -c "import glob"
